@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Web Summarizer",
+  "version": "1.0",
+  "description": "Summarize any webpage automatically",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "*://*/*.pdf"],
+      "js": ["libs/pdf.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["libs/pdf.worker.js", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
