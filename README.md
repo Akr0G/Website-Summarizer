@@ -117,19 +117,6 @@ Prompt iterations were refined to reduce redundancy and improve clarity.
 
 ---
 
-## My Contributions
-
-- Designed full extension architecture  
-- Implemented DOM extraction and filtering pipeline  
-- Built PDF text extraction logic using PDF.js  
-- Engineered structured summarization prompts  
-- Integrated Gemini API with robust error handling  
-- Implemented token-length safeguards  
-- Designed floating UI with accessibility support  
-- Built secure API key storage and masking logic  
-
----
-
 ## Limitations
 
 - Heuristic filtering does not perfectly isolate primary article content  
@@ -165,3 +152,4 @@ If you are a college admissions officer, researcher, or recruiter and would like
 
 - **Email:** gajula.akhil13@gmail.com  
 - **GitHub:** https://github.com/Akr0G  
+
